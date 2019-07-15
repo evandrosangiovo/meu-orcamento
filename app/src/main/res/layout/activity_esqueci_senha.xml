@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".app.login.EsqueciSenhaActivity">
+
+    <LinearLayout
+        style="@style/x_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para efetuar a recuperação da senha precisamos que você informe o email que você utilizou para cadastro da conta" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="informe seu email"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/button.primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnRecuperarSenhaOnClick"
+        android:text="Recuperar senha" />
+
+</LinearLayout>

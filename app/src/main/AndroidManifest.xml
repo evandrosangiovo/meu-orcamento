@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.meuorcamento">
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"  />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.Manifest.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.Manifest.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.Manifest.permission.INTERNET" />
+    <uses-permission android:name="android.Manifest.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.Manifest.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.Manifest.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.Manifest.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.Manifest.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.Manifest.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.Manifest.permission.VIBRATE" />
+    <uses-permission android:name="android.Manifest.permission.RECEIVE_BOOT_COMPLETED"  />
+    <uses-permission android:name="android.Manifest.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Holo.Light">
+        <activity
+            android:name=".app.login.InitActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.mainmenu.MenuSliderActivity" />
+        <activity android:name=".app.login.LoginActivity" />
+        <activity android:name=".app.login.NovoUsuarioActivity" />
+        <activity android:name=".app.login.EsqueciSenhaActivity" />
+        <activity android:name=".app.perfil.UsuarioPerfilManutencaoActivity" />
+        <activity android:name=".app.perfil.UsuarioPerfilVisualizacaoActivity"></activity>
+        <activity android:name=".app.orcamento.OrcamentoActivity" />
+        <activity android:name=".app.orcamento.OrcamentoVisualizacaoActivity" />
+        <activity android:name=".app.configuracoes.ConfiguracoesActivity" />
+        <activity android:name=".app.orcamento.OrcamentoAdicionarPropostaActivity"></activity>
+        <activity android:name=".app.orcamento.OrcamentoAdicionarFotoActivity"></activity>
+        <activity android:name=".app.orcamento.OrcamentoVisualizarFotoActivity"></activity>
+        <activity android:name=".app.orcamento.OrcamentoVisualizacaoPrestadorActivity"></activity>
+        <activity android:name=".app.orcamento.OrcamentoVisualizarPropostasActivity"></activity>
+        <activity android:name=".app.orcamento.OrcamentoVisualizarPropostaActivity"></activity>
+        <activity android:name=".app.orcamento.OrcamentoAvaliacaoServicoPrestadoActivity"></activity>
+
+
+
+
+
+
+        <provider
+            android:name=".utils.GenericFileProvider"
+            android:authorities="com.meuorcamento.utils.genericfileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+
+</manifest>

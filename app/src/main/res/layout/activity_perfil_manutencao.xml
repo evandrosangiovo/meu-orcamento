@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".app.perfil.UsuarioPerfilManutencaoActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/x_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seu email" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    style="@style/label.bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvEmailVerificado"
+                    style="@style/label.success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email verificado"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvEmailNaoVerificado"
+                    style="@style/label.warning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email não verificado"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/x_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/label.bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Informações básicas" />
+
+                <LinearLayout
+                    style="@style/panel_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"></LinearLayout>
+
+                <EditText
+                    android:id="@+id/etNome"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="digite seu nome"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etSobrenome"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="sobrenome"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etDataNascimento"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="data de nascimento"
+                    android:inputType="date" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/x_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/label.bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contatos" />
+
+                <LinearLayout
+                    style="@style/panel_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etCelular"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="celular"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/etSkype"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="skype" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/x_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/label.bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Documentos" />
+
+                <LinearLayout
+                    style="@style/panel_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etCPF"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="cpf"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/etIdentidade"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="identidade"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/x_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/label.bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Endereço" />
+
+                <LinearLayout
+                    style="@style/panel_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"></LinearLayout>
+
+                <EditText
+                    android:id="@+id/etCep"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="cep" />
+
+                <EditText
+                    android:id="@+id/etCidade"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="cidade" />
+
+                <EditText
+                    android:id="@+id/etUF"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="UF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etEndereco"
+                        style="@style/edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".7"
+                        android:hint="digite seu endereço" />
+
+                    <EditText
+                        android:id="@+id/etNumeroEstabelecimento"
+                        style="@style/edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:hint="número do endereço"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etBairro"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="bairro" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnGravar"
+                style="@style/button.primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnGravarOnClick"
+                android:text="Gravar" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".app.orcamento.OrcamentoActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layoutHabilidades"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listView"
+            style="@style/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layoutInformacoes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/x_panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/label.bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Informações do orçamento" />
+
+                <LinearLayout
+                    style="@style/panel_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"></LinearLayout>
+
+                <EditText
+                    android:id="@+id/etTitulo"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="título do seu orçamento"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/etDataPrevista"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="data prevista"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etDetalhes"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="top"
+                    android:hint="descreva todos os detalhes do serviço a ser prestado. Este campo ajuda o prestador entender qual serviço você deseja."
+                    android:inputType="textMultiLine" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/x_panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/label.bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Informações do endereço" />
+
+                <LinearLayout
+                    style="@style/panel_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"></LinearLayout>
+
+                <EditText
+                    android:id="@+id/etCep"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="cep"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/etCidade"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="cidade" />
+
+                <EditText
+                    android:id="@+id/etUF"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="UF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etEndereco"
+                        style="@style/edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".7"
+                        android:hint="digite seu endereço" />
+
+                    <EditText
+                        android:id="@+id/etNumeroEstabelecimento"
+                        style="@style/edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:hint="número"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etBairro"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="bairro" />
+
+                <EditText
+                    android:id="@+id/etEnderecoPontoReferencia"
+                    style="@style/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ponto de referência" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSolicitarOrcamento"
+                style="@style/button.success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnSolicitarOrcamentoOnClick"
+                android:text="Solicitar" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

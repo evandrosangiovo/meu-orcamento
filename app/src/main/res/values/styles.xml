@@ -1,0 +1,627 @@
+<resources>
+    <style name="theme" parent="@android:style/Theme.Holo.Light">
+    </style>
+
+    <style name="theme.noactionbar" >
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="theme.noactionbar.fullscreen" >
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="normal">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="italic">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="label" >
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:enabled">true</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textColor">#73879C</item>
+    </style>
+
+
+    <style name="label.nomargin" >
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="checkbox" >
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textColor">#73879C</item>
+    </style>
+
+    <style name="checkbox.bold" >
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <style name="x_title">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="label.bold" >
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="label.white" >
+        <item name="android:textColor">#fafafa</item>
+    </style>
+
+    <style name="label.primary" >
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/border_label_primary</item>
+    </style>
+
+
+    <style name="label.dark" >
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/border_label_dark</item>
+    </style>
+
+    <style name="label.info" >
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/border_label_info</item>
+    </style>
+
+
+    <style name="label.warning" >
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/border_label_warning</item>
+    </style>
+
+    <style name="label.default" >
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/border_label_default</item>
+    </style>
+
+    <style name="label.error" >
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/border_label_error</item>
+    </style>
+
+    <style name="label.success" >
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/border_label_success</item>
+    </style>
+
+    <style name="label.danger" >
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/border_label_danger</item>
+    </style>
+
+    <style name="titleview" >
+        <item name="android:background">#e9e9e9</item>
+        <!--<item name="android:background">#dfdfdf</item>-->
+    </style>
+    <style name="label.small" >
+        <item name="android:textSize">10dp</item>
+    </style>
+    <style name="label.title" >
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="label.title.bold" >
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="label.h0" >
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="label.h1" >
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="label.h2" >
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="label.h3" >
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="label.h4" >
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="label.h5" >
+        <item name="android:textSize">10dp</item>
+    </style>
+
+
+
+
+
+    <style name="label.h0.bold" >
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="label.h1.bold" >
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="label.h2.bold" >
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="label.h3.bold" >
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="label.h4.bold" >
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="label.h5.bold" >
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="label.h0.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+    <style name="label.h1.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+    <style name="label.h2.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+    <style name="label.h3.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+    <style name="label.h4.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+    <style name="label.h5.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+
+
+    <style name="label.h0.bold.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+    <style name="label.h1.bold.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+    <style name="label.h2.bold.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+    <style name="label.h3.bold.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+    <style name="label.h4.bold.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+    <style name="label.h5.bold.success" >
+        <item name="android:textColor">#26b99a</item>
+    </style>
+
+
+
+
+    <style name="label.h0.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+    <style name="label.h1.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+    <style name="label.h2.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+    <style name="label.h3.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+    <style name="label.h4.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+    <style name="label.h5.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+
+
+    <style name="label.h0.bold.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+    <style name="label.h1.bold.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+    <style name="label.h2.bold.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+    <style name="label.h3.bold.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+    <style name="label.h4.bold.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+    <style name="label.h5.bold.error" >
+        <item name="android:textColor">#d9534f</item>
+    </style>
+
+
+    <style name="label.h0.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+    <style name="label.h1.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+    <style name="label.h2.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+    <style name="label.h3.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+    <style name="label.h4.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+    <style name="label.h5.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+
+
+    <style name="label.h0.bold.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+    <style name="label.h1.bold.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+    <style name="label.h2.bold.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+    <style name="label.h3.bold.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+    <style name="label.h4.bold.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+    <style name="label.h5.bold.warning" >
+        <item name="android:textColor">#f0ad4e</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <style name="label.titleview" >
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#fafafa</item>
+    </style>
+
+    <style name="label.titleview.h1" >
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="label.titleview.h2" >
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="label.titleview.h3" >
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="background" >
+        <item name="android:background">#20445c</item>
+    </style>
+
+    <style name="label.blue" >
+        <item name="android:textColor">#20445c</item>
+    </style>
+
+
+
+
+    <style name="edit" >
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textColor">#73879C</item>
+    </style>
+
+
+
+    <style name="edit.search" >
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="edit.small" >
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="edit.medium" >
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="edit.large" >
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+
+    <style name="panel">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+
+        <item name="android:background">#f7f7f7</item>
+        <item name="android:opacity">translucent</item>
+    </style>
+
+    <style name="x_item">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@drawable/border_x_panel</item>
+    </style>
+
+
+    <style name="x_panel">
+
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+
+
+        <item name="android:opacity">translucent</item>
+        <item name="android:radius">100dp</item>
+        <item name="android:background">@drawable/border_x_panel</item>
+    </style>
+
+
+    <style name="x_content">
+
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="x_content.no_top">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:background">@drawable/no_border</item>
+    </style>
+
+    <style name="x_well">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+
+
+        <item name="android:opacity">translucent</item>
+        <item name="android:radius">100dp</item>
+        <item name="android:background">@drawable/border_x_well</item>
+    </style>
+
+
+    <style name="x_welll">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">#f7f7f7</item>
+    </style>
+
+    <style name="panel_blue">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+
+        <item name="android:background">#ecebeb</item>
+        <item name="android:opacity">translucent</item>
+    </style>
+
+    <style name="listview">
+        <item name="android:fastScrollAlwaysVisible">true</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:divider">@android:color/transparent</item>
+    </style>
+
+
+    <style name="button">
+        <item name="android:textColor" >#fff</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="button.primary">
+        <item name="android:background">@drawable/border_button_primary</item>
+    </style>
+
+    <style name="button.danger">
+        <item name="android:background">@drawable/border_button_danger</item>
+    </style>
+
+    <style name="button.dark">
+        <item name="android:background">@drawable/border_button_dark</item>
+    </style>
+
+    <style name="button.info">
+        <item name="android:background">@drawable/border_button_info</item>
+    </style>
+
+    <style name="button.success">
+        <item name="android:background">@drawable/border_button_success</item>
+    </style>
+
+    <style name="button.warning">
+        <item name="android:background">@drawable/border_button_warning</item>
+    </style>
+
+    <style name="circle">
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="circle.success" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_circle_success</item>
+    </style>
+
+    <style name="circle.danger" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_circle_danger</item>
+    </style>
+
+    <style name="circle.warning" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_circle_warning</item>
+    </style>
+
+
+    <style name="circle.white" >
+        <item name="android:textColor">#73879C</item>
+        <item name="android:background">@drawable/border_circle_white</item>
+    </style>
+
+    <style name="circle.primary" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_circle_primary</item>
+    </style>
+
+
+    <style name="circle.dark" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_circle_dark</item>
+    </style>
+
+    <style name="circle.info" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_circle_info</item>
+    </style>
+
+    <style name="circle.default" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_circle_default</item>
+    </style>
+
+    <style name="circle.error" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_circle_error</item>
+    </style>
+
+
+
+    <style name="square">
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="square.success" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_square_success</item>
+    </style>
+
+    <style name="square.black" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_square_black</item>
+    </style>
+
+    <style name="square.danger" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_square_danger</item>
+    </style>
+
+    <style name="square.warning" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_square_warning</item>
+    </style>
+
+
+    <style name="square.white" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_square_white</item>
+    </style>
+
+    <style name="square.primary" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_square_primary</item>
+    </style>
+
+
+    <style name="square.dark" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_square_dark</item>
+    </style>
+
+    <style name="square.info" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_square_info</item>
+    </style>
+
+    <style name="square.default" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_square_default</item>
+    </style>
+
+    <style name="square.error" >
+        <item name="android:textColor">#f7f7f7</item>
+        <item name="android:background">@drawable/border_square_error</item>
+    </style>
+
+</resources>

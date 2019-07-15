@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".app.orcamento.OrcamentoAdicionarPropostaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/x_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/label.bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Informações do orçamento" />
+
+                    <LinearLayout
+                        style="@style/panel_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvHabilidade"
+                        style="@style/label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="habilidade" />
+
+                    <TextView
+                        android:id="@+id/tvTitulo"
+                        style="@style/label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="título"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/tvDataPrevista"
+                        style="@style/label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="data prevista"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tvDetalhes"
+                        style="@style/label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:hint="detalhes"
+                        android:inputType="textMultiLine" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/x_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/label.bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Avaliação" />
+
+                    <LinearLayout
+                        style="@style/panel_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            style="@style/label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="avalie o serviço prestado" />
+
+                        <RatingBar
+                            android:id="@+id/rbAvaliacao"
+                            style="@style/edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/etObservacoes"
+                            style="@style/edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="descreva como foi a sua experiência com este prestador"
+                            android:inputType="textMultiLine"
+                            android:singleLine="false" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/button.success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnAvaliarOnClick"
+            android:text="Avaliar" />
+    </LinearLayout>
+
+
+</LinearLayout>

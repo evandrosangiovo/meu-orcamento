@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".app.login.NovoUsuarioActivity">
+
+    <LinearLayout
+        style="@style/x_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="informe seu email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etSenha"
+            style="@style/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="informe a senha"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etConfirmacaoSenha"
+            style="@style/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="informe a senha novamente"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/button.primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnCriarNovoUsuarioOnClick"
+        android:text="Criar usuário" />
+
+</LinearLayout>
